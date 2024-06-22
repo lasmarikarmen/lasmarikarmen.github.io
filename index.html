@@ -1,263 +1,211 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<title>Las Marikarmen - queer synthpunk</title>
-<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/x-icon" href="favicon.ico">
-	
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<style type="text/css">
-body,td,th {
-    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
-    font-size: medium;
-    color: #000000;
-}
-body {
-    background-color: #FFFFFF;
-}
-a:link {
-    color: rgb(0, 206, 206);
-    text-decoration: none;
-}
-a:visited {
-	color: rgb(0, 206, 206);
-    text-decoration: none;
-}
-a:hover {
-    text-decoration: none;
-    color: #FF00F8;
-}
-a:active {
-    text-decoration: none;
-    color: #FF00F8;
-}
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Las Marikarmen - queer synthpunk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="main.js"></script> -->
 
-	
-/* Navbar */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-}
-
-/* Nav */
-nav {
-  height: 70px;
-  background: rgb(20, 20, 20);
-  color: rgb(220, 220, 220);
-  padding: 0 2rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-}
-nav svg {
-  display: none;
-}
-.logo h2 {
-  text-decoration: overline;
-  font-style: italic;
-  color: rgb(0, 206, 206);
-  cursor: pointer;
-  margin: 0 0.5rem;
-}
-.nav-items {
-  display: flex;
-  justify-content: space-between;
-}
-.overview,
-.account {
-  display: flex;
-}
-.overview {
-  margin-right: 4rem;
-}
-.nav-items h3 {
-  display: none;
-}
-nav li {
-  list-style: none;
-  margin: 0 0.5rem;
-}
-nav a {
-  text-decoration: none;
-  color: rgb(220, 220, 220);
-}
-nav a:hover {
-  color: #a0ebfd;
-}
-nav a::after {
-  content: "";
-  display: block;
-  height: 3px;
-  background: #a0ebfd;
-  width: 0%;
-  transition: all ease-in-out 300ms;
-}
-nav a:hover::after {
-  width: 100%;
-}
-#check,
-.menu {
-  display: none;
-}
-
-/* Hero section */
-.hero-section {
-  height: 100vh;
-  background: url("hero-bg.jpg") center no-repeat;
-  background-size: cover;
-}
-
-/* Responsive */
-@media (max-width: 750px) {
-  .nav-items {
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 250px;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background: rgb(20, 20, 20);
-    padding: 2rem;
-    transition: all ease-in-out 500ms;
-  }
-  .overview,
-  .account {
-    flex-direction: column;
-    width: auto;
-  }
-  .overview {
-    margin: 0;
-  }
-  .nav-items h3 {
-    display: inline-block;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-size: 13px;
-    margin-bottom: 1rem;
-  }
-  nav svg {
-    display: inline-block;
-    cursor: pointer;
-    vertical-align: top;
-  }
-  nav li {
-    margin: 1rem 0;
-  }
-  nav a {
-    display: inline-block;
-  }
-  nav a:hover {
-    margin-left: 2px;
-    transition: all ease-in-out 300ms;
-  }
-  .menu {
-    display: inline-block;
-    position: fixed;
-    right: 2.5rem;
-    z-index: 99;
-  }
-  #check:checked ~ .nav-items {
-    right: 0;
-  }
-}
-	
-	
-	
-	
-	
-	
-		
-/* photo gallery */
-		
-	.mySlides {display:none}
-	.w3-left, .w3-right, .w3-badge {cursor:pointer}
-	.w3-badge {height:13px;width:13px;padding:0}
-
-</style>	
 </head>
 	
 	
 	
 <body>
+	
+	
 	<!-- Navbar -->
-	<nav>
-      <div class="logo">
-        <img src="logo_Las-Marikarmen-black_pink_border_02.2.png" class="w3-image w3-left" style="width:20%">
-      </div>
-      <div class="nav-items">
-        <ul class="overview">
-          <li><a href="#tienda">Tienda</a></li>
-          <li><a href="#calendario">Calendario</a></li>
-          <li><a href="#musica">Música</a></li>
-          <li><a href="#videos">Vídeos</a></li>
-          <li><a href="#artistas">Artistas</a></li>
-          <li><a href="#prensa">Prensa</a></li>
-		  <li><a href="#contacto">Contacto</a></li>
-          
-        </ul>
-        <ul class="account">
-          <li><i class="fa fa-language" style="width:30px"></i></li>
-          <li><a href="index-english.html">English</a></li>
-          <li><a href="#index-deutsch.html">Deutsch</a></li>
-          <li><a href="#index.html">Castellano</a></li>
-        </ul>
-      </div>
-		
-	<!-- hidden menu -->	
-	<input type="checkbox" id="check" />
+	
+ <nav>
+      <input type="checkbox" id="check">
       <label for="check" class="menu">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
-          fill="currentColor"
-          class="bi bi-list"
-          viewBox="0 0 16 16"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-          />
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
         </svg>
       </label>
-
-		
+      <div class="logo">
+        <a href="#"><img src="graphics/logo_Las-Marikarmen-black_pink_border_02.2.png" class="w3-image w3-left" style="width:20%"></a>
+      </div>
+      <div class="nav-items">
+        <ul class="overview" >
+          <h3>Las Marikarmen</h3>
+          <li>
+            <a href="#tienda">
+              Tienda</a>
+          </li>
+          <li>
+            <a href="#calendario">
+              Calendario</a>
+          </li>
+          <li>
+            <a href="#musica">
+              Música</a>
+          </li>
+          <li>
+            <a href="#videos">
+              Vídeos</a>
+          </li>
+			 <li>
+            <a href="#artistas">
+              Artistas</a>
+          </li>
+			 <li>
+            <a href="#prensa">
+              Prensa</a>
+          </li>
+			 <li>
+            <a href="#contacto">
+              Contacto</a>
+          </li>
+        </ul>
+        <ul class="account">
+			<h3></h3>
+          <li>
+            <a href="en/index.html">
+              English</a>
+		  </li>
+		  <li>
+            <a href="de/index.html">
+              Deutsch</a>
+          </li>
+             <li>
+            <a href="#">
+              Castellano</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-
 	
 	
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:100%">
+
+	<!-- redes sociales -->
+	<div class="w3-container  w3-center  w3-black w3-xlarge" style="max-width:100%">
+	<a href="https://sptfy.com/lasmarikarmen" target="_blank"> 
+        <i class="fa fa-spotify w3-hover-opacity"></i></a>
+    <a href="https://www.youtube.com/channel/UCtktbwYuTYX1_Ym86ScTacg?view_as=subscriber" target="_blank"> 
+        <i class="fa fa-youtube w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/lasmarikarmen/?hl=es" target="_blank">
+        <i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.facebook.com/LasMarikarmen/" target="_blank">
+		<i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://lasmarikarmen.bandcamp.com/music" target="_blank"> 
+		<i class="fa fa-bandcamp w3-hover-opacity"></i></a>
+    <a href="https://x.com/lasmarikarmen" target="_blank">
+		<i class="fa fa-twitter w3-hover-opacity"></i></a></i>
+	</div>
 
  <!-- full screen Image  -->
-<img src="gallery2024 (8).jpg" class="w3-image" style="width:100%">
+<img src="images/gallery2024 (8).jpg" class="w3-image" style="width:100%">
 	
 	 <!-- The Intro Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="">
       <p class="w3-center">Tras la muerte de nuestra madre, la gran pionera transfeminista Lady Marikarmen,<br>
               queremos honrar homenaje a su legado con un concierto en su funeral y continuar su lucha: </p>
 	  <h2><p style="color:darkgreen;">Destruir el heteropatriarcado, la cis-normalidad y el binarismo obligado!</p></h2><br>
-    <img src="website-768px-buscando-cetas.jpg"  class="w3-round" alt="buscando cetas" style="width:100%"><br>
+    <img src="graphics/website-768px-buscando-cetas.jpg"  class="w3-round" alt="buscando cetas" style="width:100%"><br>
                
   </div>
 
-	<!-- The shop Section -->
+
 	
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="tienda">
+<!-- The shop Section -->
+	
+  <div class="w3-container w3-content w3-center w3-purple w3-padding-64" style="max-width:100%" id="tienda">
     <h2 class="w3-wide">MERCH DE FANATASÍA</h2>
-   <p class="w3-opacity w3-center"><i>Se puede pedir todo en <a href="https://lasmarikarmen.bandcamp.com/merch" target="_blank" rel="noopener"><strong>Bandcamp.</strong></a></i></p>
-    <p class="w3-justify"><br>
+	</div>
+ <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:60%">
+   <p class="w3-opacity w3-center"><i>Mientras estamos programando una tienda en que puedes pagar con bizum, transferencia o efectivo, ofrecemos dos opciones de compra:</i> </p><br>
+
+	   🌟 <strong>Bizum · Transferencia · Efectivo</strong> 🌟 <br>
+			Puedes añadir el total y 
+	   <i class="fa fa-envelope" style="width:30px"></i>
+	        	<a href="mailto:lasmarikarmen@gmail.com?
+						 &subject=Pedido%20de%20la%20pagina%20web
+						 &body=Hola%20Las%20Marikarmen%21%0A%0AQuiero%20pedir%3A%0A%0A%7Bborrar%20todo%20que%20NO%20quieres%7D%0A%E2%AD%90%2010%E2%82%AC%20Abanico%20%22DESTRUIR%20EL%20CIS-TEMA%22%20%3A%20%7Bcantidad%7D%0A%E2%AD%90%2015%E2%82%AC%20XXL-Print%20camiseta%3A%20%7Bcantidad%20y%20tama%C3%B1o%7D%0A%E2%AD%90%2012%E2%82%AC%20Bleach%20Punk%20camiseta%3A%20%7Bcantidad%20y%20tama%C3%B1o%7D%0A%E2%AD%90%20%20%205%E2%82%AC%20Fanzine%20NOS%20PEGAN%21%3A%20%7Bcantidad%7D%0A%E2%AD%90%2010%E2%82%AC%20L%C3%A1grimas%20de%20hombres%20cis%3A%20%7Bcantidad%7D%0A%E2%AD%90%20%201%E2%82%AC%20Pegatina%20%22DESTRUIR%20EL%20CIS-TEMA%22%3A%20%7Bcantidad%7D%0A%E2%AD%90%2010%E2%82%AC%20Unicornio%20USB%3A%20%7Bcantidad%7D%0A%E2%AD%90%2010%E2%82%AC%20CD%20COMPOST%20YOUR%20GENDER%3A%20%7Bcantidad%7D%0A%E2%AD%90%20%205%E2%82%AC%20Cassette%20NOS%20PEGAN%21%3A%20%7Bcantidad%7D%0A%0ATotal%3A%20%7Ba%C3%B1adir%20el%20total%7D%0A%0AM%C3%A9todo%20de%20pago%3A%20%7Bborrar%20lo%20que%20NO%20quieres%7D%0ABizum%0ATransferencia%20bancaria%0AEfectivo%20en%20mano%0A%0AMuchas%20gracias%21%0A%0A" target="_blank">
+	        escribirnos lo que quieres pedir</a>.<br>
+			Despues de la confirmación por correo electrónico,<br>
+			haces un bizum o transferencia bancaria, <br>
+			o lo recoges en mano y pagas en efectivo.
+	        <br><br>
+	   🌟 <strong>PayPal · Targeta de credito</strong> 🌟 <br>
+			Puedes pedir en <a href="https://lasmarikarmen.bandcamp.com/merch" target="_blank" rel="noopener"><strong>Bandcamp</strong></a> <br>
+			y pagar con PayPal o targeta de credito.<br>
+<br>
+Cada producto está enlazado a Bandcamp.  
+   
+ </div>
+   
+	 <div class="w3-container w3-content w3-center" style="max-width:100%" id="prensa">
+       <div class="w3-row w3-padding-32">
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/fan-abanico" target="_blank" rel="noopener"><img src="graphics/merch/merch abanico.jpg"  class="w3-round" alt="abanico" style="width:80%"><br><br>
+				   <p><strong>Abanico "DESTRUIR EL CIS-TEMA"</strong></p>
+							  <p>10€</p></a>      
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/camisetas-t-shirts-xxl-print" target="_blank" rel="noopener"><img src="graphics/merch/merch xxxl shirt.jpg"  class="w3-round" alt="XXL-Print camiseta" style="width:70%"><br><br>
+				   <p><strong>XXL-Print camiseta</strong></p>
+							  <p>15€</p></a>                                
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/bleach-punk-camisetas-t-shirts" target="_blank" rel="noopener"><img src="graphics/merch/merch bleah punk shirt.jpg"  class="w3-round" alt="bleach punk shirt" style="width:50%"><br><br>
+				   <p><strong>Bleach Punk camiseta</strong></p>
+							  <p>12€</p></a>                                
+		   </div>
+	   </div>
+		
+	   <div class="w3-row w3-padding-32">
+		    <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/fanzine-nos-pegan" target="_blank" rel="noopener"><img src="graphics/merch/merch fanzine.jpg"  class="w3-round" alt="fanzine" style="width:80%"><br><br>
+				   <p><strong>Fanzine NOS PEGAN!</strong></p>
+							  <p>5€</p></a> 
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/l-grimas-de-hombres-cis-cismentears" target="_blank" rel="noopener"><img src="graphics/merch/merch lagrimas.jpg"  class="w3-round" alt="lagrimas de hombres cis" style="width:80%"><br><br>
+				   <p><strong>Lágrimas de hombres cis</strong></p>
+							  <p>10€</p></a>                    
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/pegatinas-grandes-big-stickers" target="_blank" rel="noopener"><img src="graphics/merch/merch pegatina.jpg"  class="w3-round" alt="pegatina" style="width:80%"><br><br>
+				   <p><strong>Pegatina "DESTRUIR EL CIS-TEMA"</strong></p>
+							  <p>1€</p></a> 
+		   </div>
+		 </div>
+		
+	     <div class="w3-row w3-padding-32">
+			 
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				    <a href="https://lasmarikarmen.bandcamp.com/merch/usb-unicorn-4gb-with-music-photos" target="_blank" rel="noopener"><img src="graphics/merch/merch unicorn.jpg"  class="w3-round" alt="unicornios USB" style="width:80%"><br><br>
+				   <p><strong>Unicornios USB álbum &amp; fotos</strong></p>
+							  <p>10€</p></a>                  
+		   </div>
+			 
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/album/compost-your-gender-album-2020" target="_blank" rel="noopener"><img src="graphics/merch/merch compost cd.jpg"  class="w3-round" alt="" style="width:60%"><br><br>
+				   <p><strong>CD COMPOST YOUR GENDER</strong></p>
+							  <p>10€
+							    </p></a>  
+			</div>
+			   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://lasmarikarmen.bandcamp.com/merch/nos-pegan-album-cassette" target="_blank" rel="noopener"><img src="graphics/merch/merch cassettes.jpg"  class="w3-round" alt="cassettes" style="width:80%"><br><br>
+				   <p><strong>Cassette NOS PEGAN!</strong></p>
+							  <p>5€
+							    </p></a>               
+		   </div>
+
+			 
+		 </div>	 
+	 </div>
+</div>
         
-      <a href="https://lasmarikarmen.bandcamp.com/merch" target="_blank" rel="noopener"><img src="web-merch-potporri.jpg" class="w3-image w3-center " alt="abanicos, camisetas, pegatinas, lágrimas de hombres cis, unicornios USB..." style="max-width:100%"/> </a>    
+		
   </div>
 </div>
   </div>
@@ -267,10 +215,12 @@ nav a:hover::after {
 	
 	
 	<!-- The calendar Section -->
-<div class="w3-pink" id="calendario">
-    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+
+    <div class="w3-container w3-pink w3-content w3-padding-64" style="max-width:100%" id="calendario">
       <h2 class="w3-wide w3-center">CALENDARIO</h2>
-      <p class="w3-opacity w3-center"><i>Reservar entradas en las enlaces</i></p><br>
+</div>
+    <div class="w3-container w3-content w3-padding-64" style="max-width:100%">
+		<p class="w3-opacity w3-center"><i>Reservar entradas en las enlaces</i></p><br>
 
 		  <!-- songkick widget -->
          <p> <a href="https://www.songkick.com/artists/10131470" class="songkick-widget" data-theme="dark" data-track-button="on" data-detect-style="off" data-background-color="rgb(0,0,0,1)" data-font-color="rgb(255,255,255,1)" data-button-bg-color="rgb(255,255,255,1)" data-button-text-color="rgb(0,0,0,1)" data-locale="es" data-other-artists="on" data-share-button="on" data-country-filter="off" data-rsvp="on" data-request-show="on" data-past-events="off" data-past-events-offtour="off" data-remind-me="off" style="display: none;"></a><script src='//widget-app.songkick.com/injector/10131470'></script>
@@ -282,9 +232,10 @@ nav a:hover::after {
 	
 	
 	<!-- The music Section -->
-<div class="w3-container w3-content w3-center  w3-padding-64" style="max-width:800px" id="musica">
+<div class="w3-container w3-yellow w3-content w3-center  w3-padding-64" style="max-width:100%" id="musica">
     <h2 class="w3-wide musica">QUEER SYNTHPUNK</h2>
-   
+</div>
+ <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:100%">
     <div class="w3-row w3-padding-32">
       <div class="w3-half w3-cell-top w3-padding-32">
        
@@ -308,9 +259,10 @@ nav a:hover::after {
 	
 
  <!-- The videos Section -->
-  <div class="w3-pink" id="videos">
-    <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:100%">
+    <div class="w3-container w3-pink w3-center w3-content w3-padding-64" style="max-width:100%"  id="videos">
       <h2 class="w3-wide">VÍDEOCLIPS</h2>
+	  </div>
+		<div class="w3-container w3-center w3-content w3-padding-64" style="max-width:100%">
 		<i>YouTube <a href="https://www.youtube.com/c/@lasmarikarmen">@lasmarikarmen</a></i><br><br>
 
 
@@ -334,28 +286,30 @@ nav a:hover::after {
 	
 	
  <!-- The artists Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="artistas">
+  <div class="w3-container w3-content w3-deep-purple w3-center w3-padding-64" style="max-width:100%" id="artistas">
     <h2 class="w3-wide">ARTISTAS</h2>
+	    </div>	
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
        <p class="w3-justify">Las Marikarmen somos una banda travesti, transfeminista y   queer en el que se mezcla música, performance, drag, y vivencias.   Visibilizamos nuestras identidades disidentes en escena donde todes   cantamos, tocamos, hacemos perfo, vídeo, bailoteo… y lo que haga falta!   Hacemos musiquita urbana con la fuerza de saxofones para hacer vibrar al   público al que invitamos a adentrarse en nuestro mundo de fantasía y   purpurina.<br>
        El éxito de la banda se basa en la participación de muchas personas diferentes desde 2017. </p>
 	  
     <h2 class="w3-wide">Miembres actuales:</h2>
       <div class="w3-row w3-padding-32">
 	   <div class="w3-third w3-cell-top w3-padding-32">
-               <img src="artistas-Victoria.jpg"  class="w3-round" alt="Victoria Sickness" style="width:100%"><br>
+               <img src="graphics/artistas-Victoria.jpg"  class="w3-round" alt="Victoria Sickness" style="width:100%"><br>
                <p><strong>saxo tenor, voz, acrobatica, promos</strong></p>
                           <p>Barriobajera choni multidisciplinar. Se   hace paso al caminar. Atrapada en un eterno loop por conseguir joyas.   Sus genitales son incapaces de mantenerse dentro de una falda. Además   acróbata, muy carismática y llenísima de autotune.</p>
                           <p><a href="https://www.instagram.com/victoriasickness/" target="_blank" rel="noopener"><strong>@victoriasickness</strong></a></p>
       </div>
       <div class="w3-third w3-cell-top w3-padding-32">
-             <img src="artistas-Hipogrifa.jpg" class="w3-round" alt="Hipogrifa" style="width:100%">
+             <img src="graphics/artistas-Hipogrifa.jpg" class="w3-round" alt="Hipogrifa" style="width:100%">
 		     <p><strong>clarinete, voz, teclado, culo euskolabel</strong></p>
                           <p>Ser   mitológico vasco que nunca sabe dónde está porque no se orienta.  Sus ondas de choque muelen machos en la tierra y ellos pierdan su   memorias cuando suena la clarinete. </p>
                           <p><a href="https://www.instagram.com/hipogrifff/" target="_blank" rel="noopener"><strong>@hipogrifff</strong></a></p>
       </div>
 		
       <div class="w3-third w3-cell-top w3-padding-32">
-            <img src="artistas-Contamina.jpg" alt="Contamina Perpetua" class="w3-round" style="width:100%">
+            <img src="graphics/artistas-Contamina.jpg" alt="Contamina Perpetua" class="w3-round" style="width:100%">
 		    <p><strong>saxo barítono, fliscornio, voz, luces, vídeo, gráficos</strong></p>
                           <p>Criatura llegada desde el espacio intergaláctico que fué encontrada viviendo bajo un árbol en Japón. Ama la papiroflexia y el coco. Sus cejas son al mismo tiempo alas y transmisores de radio interplanetario. Toca el saxo para entrenar sus pulmones y así sobrevivir en esta atmósfera.</p>
                           <p><strong><a href="https://www.instagram.com/contamina_perpetua/" target="_blank" rel="noopener">@contamina_perpetua</a></strong></p>
@@ -364,12 +318,86 @@ nav a:hover::after {
   </div>
 
 
+
+<!-- The prensa Section -->
+  
+ 	<div class="w3-container w3-content w3-center w3-blue-grey w3-padding-64" style="max-width:100%" id="prensa">
+    <h2 class="w3-wide">PRENSA</h2>
+    </div>
+	<div class="w3-container w3-content w3-center w3-padding-64" style="max-width:100%" id="prensa">
+       <div class="w3-row w3-padding-32">
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://www.ccma.cat/3cat/pop-i-punk-queer/audio/1189980/" target="_blank" rel="noopener"><img src="prensa/3cat.png"  class="w3-round" alt="3cat" style="width:50%"><br><br>
+				   <p><strong>Podcast Ja m'entens</strong></p>
+							  <p>Pop i punk Queer<br>
+								noviembre 2023</p></a>                    
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://beteve.cat/placa-tisner/marikarmen-autodefensa-no-nomes-bat-beisbol/amp/" target="_blank" rel="noopener"><img src="prensa/beteve-300x300.jpg"  class="w3-round" alt="betevé" style="width:50%"><br><br>
+				   <p><strong>Plaça Tisner</strong></p>
+							  <p>“L’autodefensa no és només anar amb un bat de beisbol, també és cuidar-se”<br>
+								julio 2023</p></a>                    
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://beteve.cat/habitacio-910/las-marikarmen-debuten-amb-nos-pegan/" target="_blank" rel="noopener"><img src="prensa/hab910.jpeg"  class="w3-round" alt="Habitació 910" style="width:50%"><br><br>
+				   <p><strong>Habitació 910</strong></p>
+							  <p>“Nos pegan”, el primer treball del trio de neo-punk queer planta cara a la l’LGTBIQ+fòbia<br>
+								junio 2023</p></a> 
+		   </div>
+	   </div>
+		
+	   <div class="w3-row w3-padding-32">
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://www.enderrock.cat/noticia/23689/orgull-queer-catala" target="_blank" rel="noopener"><img src="prensa/enderrock.jpg"  class="w3-round" alt="ENDERROCK" style="width:80%"><br><br>
+				   <p><strong>ENDERROCK</strong></p>
+							  <p>L'orgull queer català<br>
+								diciembre 2021</p></a>              
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				  <a href="https://archivo.kaosenlared.net/nos-regocijamos-en-el-odio-que-nos-transmite-la-sociedad-y-lo-transformamos-en-empoderamiento-y-amor-personal/" target="_blank" rel="noopener"><img src="prensa/kaos-en-la-red.png"  class="w3-round" alt="KAOSENLARED" style="width:80%"><br><br>
+				   <p><strong>KAOSENLARED</strong></p>
+							  <p>«Nos regocijamos en el odio que nos transmite la sociedad y lo transformamos en empoderamiento y amor personal»<br>
+							    octubre 2020</p></a>                    
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="https://masdecultura.com/musica/las-marikarmen-entrevistamos-este-colectivo-transfeminista-queer/" target="_blank" rel="noopener"><img src="prensa/mas-de-cultura.png"  class="w3-round" alt="3cat" style="width:80%"><br><br>
+				   <p><strong>Más de Cultura</strong></p>
+							  <p>Entrevistamos este colectivo transfeminista queer<br>
+								septiembre 2020</p></a>                    
+             </div>
+		 </div>
+		
+	     <div class="w3-row w3-padding-32">
+			 
+			  <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="" target="_blank" rel="noopener"><img src=""  class="w3-round" alt="" style="width:80%"><br><br>
+				   <p><strong> </strong></p>
+							  <p> <br>
+							    </p></a>               
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				    <a href="https://beteve.cat/feeel/las-marikarmen/" target="_blank" rel="noopener"><img src="prensa/feeel.png"  class="w3-round" alt="betevé" style="width:50%"><br><br>
+				   <p><strong>Feeel BTV</strong></p>
+							  <p>Parlen de l’esperit d’aquesta banda performativa i ens presenten el seu disc de debut: 'Compost you gender’<br>
+								abril 2021</p></a>                  
+		   </div>
+		   <div class="w3-third w3-cell-top w3-padding-32">
+				   <a href="" target="_blank" rel="noopener"><img src=""  class="w3-round" alt="" style="width:80%"><br><br>
+				   <p><strong> </strong></p>
+							  <p> <br>
+							    </p></a>  
+			   
+		 </div>	 
+	 </div>
+</div>
   
 
 
   <!-- The Contact Section -->
-  <div class="w3-orange w3-container w3-center w3-content w3-padding-64" style="max-width:100%" id="contacto">
+  <div class="w3-container w3-center w3-blue w3-content w3-padding-64" style="max-width:100%" id="contacto">
     <h2 class="w3-wide ">CONTACTO</h2>
+  </div>
+  <div class="w3-container w3-center w3-content w3-padding-64" style="max-width:100%" >
   
          <i>Si quieres un<strong> concierto teatral</strong> o un <strong>taller de drag</strong>,<br>
             o simplemente te falta alguien para escucharte, llámanos.</i><br><br>
@@ -388,7 +416,7 @@ nav a:hover::after {
 	        	<strong>Las Marikarmen</strong><br>
 	        	<i class="fa fa-telegram" style="width:30px"></i>+34 658 95 54 71 · Victoria Sickness<br>
 		<i class="fa fa-envelope" style="width:30px"></i>
-   	  <a href="mailto:lasmarikarmen@gmail.com
+   	  <a href="mailto:lasmarikarmen@gmail.com?
 				 &subject=os%20amo
 				 &body=hola%20%F0%9F%92%9A%F0%9F%92%99%F0%9F%92%9C%F0%9F%96%A4%0A%0A" target="_blank">Escribenos una carte de amor: lasmarikarmen(@)gmail(.com)</a>
 		
@@ -399,121 +427,123 @@ nav a:hover::after {
 
 
     <div class="w3-container w3-center">  
-	  <img src="waiting.jpg"  class="w3-round w3-center" alt="esperando" style="width:60%"><br>
+	  <img src="graphics/waiting.jpg"  class="w3-round w3-center" alt="esperando" style="width:60%"><br>
     </div>
 </div>
 	
-	
-	 <!-- The estupendo Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="">
-      <p class="w3-center style="color:darkgreen;><h2><p>✨ estás estupendo ✨</p></h2></p>
-	             
+
+
+<!-- The estupendo Section -->
+  <div class="w3-container w3-content w3-center w3-orange w3-padding-64" style="max-width:100%" id="">
+      <p class="w3-center style="color:darkgreen;><h2><p>✨ estás estupendo ✨</p></h2></p>   
   </div>
 
-	<!-- slide show -->
+
+<!-- slide show horizontal -->
 
   <div class="w3-content w3-display-container" style="max-width:800px"><br>
     <!-- images -->
-    <img class="mySlides" src="gallery2024 (1).jpg" style="width:100%">
-    <img class="mySlides" src="gallery2024 (2).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (3).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (4).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (5).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (6).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (7).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (8).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (9).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (10).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (11).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (12).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (13).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (14).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (15).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (16).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (17).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (18).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (19).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (20).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (21).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (22).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (23).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (24).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (25).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (26).jpg" style="width:100%">
-	<img class="mySlides" src="gallery2024 (27).jpg" style="width:100%">
-  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
-    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-	<!-- buttons -->
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(12)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(13)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(14)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(15)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(16)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(17)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(18)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(19)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(20)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(21)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(22)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(23)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(24)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(25)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(26)"></span>
-	  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(27)"></span>
-    </div>
-</div>
+    <img class="mySlides" src="images/gallery2024 (1).jpg" style="width:100%">
+    <img class="mySlides" src="images/gallery2024 (2).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (3).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (4).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (5).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (6).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (7).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (8).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (9).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (10).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (11).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (12).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (13).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (14).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (15).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (16).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (17).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (18).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (19).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (20).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (21).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (22).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (23).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (24).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (25).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (26).jpg" style="width:100%">
+	<img class="mySlides" src="images/gallery2024 (27).jpg" style="width:100%">
+	  	<!-- buttons -->
+		  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-topmiddle" style="width:100%">
+    		<div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    		<div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(5)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(6)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(7)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(8)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(9)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(10)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(11)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(12)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(13)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(14)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(15)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(16)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(17)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(18)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(19)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(20)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(21)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(22)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(23)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(24)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(25)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(26)"></span>
+			  <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(27)"></span>
+          </div>
+   </div>
 
 
-<script>
-var slideIndex = 1;
-showDivs(slideIndex);
+			<script>
+			var slideIndex = 1;
+			showDivs(slideIndex);
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+			function plusDivs(n) {
+			  showDivs(slideIndex += n);
+			}
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+			function currentDiv(n) {
+			  showDivs(slideIndex = n);
+			}
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-white", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-white";
-}
-</script>
+			function showDivs(n) {
+			  var i;
+			  var x = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("demo");
+			  if (n > x.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = x.length}
+			  for (i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" w3-white", "");
+			  }
+			  x[slideIndex-1].style.display = "block";  
+			  dots[slideIndex-1].className += " w3-white";
+			}
+			</script>
 
 
   
 <!-- End Page Content -->
-</div>
+
 
 
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-black w3-xlarge">
+<!-- redes sociales -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
 	<a href="https://sptfy.com/lasmarikarmen" target="_blank"> 
         <i class="fa fa-spotify w3-hover-opacity"></i></a>
     <a href="https://www.youtube.com/channel/UCtktbwYuTYX1_Ym86ScTacg?view_as=subscriber" target="_blank"> 
@@ -525,7 +555,9 @@ function showDivs(n) {
     <a href="https://lasmarikarmen.bandcamp.com/music" target="_blank"> 
 		<i class="fa fa-bandcamp w3-hover-opacity"></i></a>
     <a href="https://x.com/lasmarikarmen" target="_blank">
-		<i class="fa fa-twitter w3-hover-opacity"></i></a>
+		<i class="fa fa-twitter w3-hover-opacity"></i></a></i>
+	</div>
+
 
 
 </footer>
